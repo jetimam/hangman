@@ -40,6 +40,19 @@ public class Word {
         }
     }
 
+    public boolean winCheck() {
+        for (int i = 0; i < word.length; i++) {
+            if (wordCheck[i] == 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean lossCheck() {
+        return lives == 0;
+    }
+
     public char[] getWord() {
         return this.word;
     }

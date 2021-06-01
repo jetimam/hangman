@@ -17,13 +17,24 @@ public class Main {
 
         Word word = new Word(dictionary.generateWord(), MAX_LIVES);
 
-        while(true) {
+        while(word.winCheck()) {
             System.out.println(" > " + word.getLives() + " lives left.\n");
             System.out.println(word);
             System.out.println("\n > Guess? ");
             guess = scanner.next().charAt(0);
 
             word.guess(guess);
+
+            if (word.lossCheck()) {
+                break;
+            }
+        }
+
+        if (word.lossCheck()) {
+            System.out.println("You lost... :(");
+        }
+        else {
+            System.out.println("You won! :)");
         }
     }
 }
