@@ -1,3 +1,5 @@
-package main.java;
+package proj.hang;
 
-public class Word
+public class Word {
+
+}
