@@ -8,4 +8,8 @@ public class Word {
         this.word = word;
         this.lives = lives;
     }
+
+    public String getWord() {
+        return this.word;
+    }
 }
