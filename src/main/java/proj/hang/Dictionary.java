@@ -2,11 +2,11 @@ package proj.hang;
 import java.lang.Math;
 
 public class Dictionary {
-    String[] array = {"banana", "cat", "computer", "modem", "magazine", "airport"};
+    private String[] array = {"banana", "cat", "computer", "modem", "magazine", "airport", "purse", "dragon", "blanket", "lawyer", "keyboard"};
 
     public Dictionary() {}
 
-    public String getWord() {
+    public String generateWord() {
         int max = array.length - 1;
         int min = 1;
         int range = max - min + 1;
